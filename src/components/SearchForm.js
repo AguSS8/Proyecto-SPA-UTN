@@ -4,7 +4,10 @@ export function SearchForm () {
  $searchForm.classList.add("search-form");
  $input.name = "search";
  $input.type = "search";
- $input.placeholder = "Nombre de Carta";
+ $input.placeholder = "Buscar Carta";
  $searchForm.appendChild($input);
+ const $btnSearch = document.createElement("i");
+ $btnSearch.classList.add("ri-search-line");
+ $searchForm.appendChild($btnSearch);
  return $searchForm;
 }
