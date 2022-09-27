@@ -1,9 +1,12 @@
+import { Link } from "./Link.js";
 
 
 export function Title() {
+  const $title = Link({});
   const $logoTitle = document.createElement("img");
-  $logoTitle.src = "src/assets/img/logo.jpg";
+  $logoTitle.src = "assets/img/logo.jpg";
   $logoTitle.width = 250;
   $logoTitle.alt = "Logo de Yugioh";
-  return $logoTitle;
+  $title.appendChild($logoTitle)
+  return $title;
 };

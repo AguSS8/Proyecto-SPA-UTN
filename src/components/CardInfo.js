@@ -6,12 +6,12 @@ export function CardInfo(props) {
         <img src="${image}" alt="${name}"/>
         <aside class="card-info">
           <p>Name: <span>${name}</span></p>
-          <p>Type: <span>${type}</span></p>
-          <p>ATK: <span class="atk">${atk}</span></p>
-          <p>DEF: <span class="def">${def}</span></p>
-          <p>LVL: <span>${level}</span></p>
-          <p>race: <span>${race}</span></p>
-          <p>attribute: <span>${attribute}</span></p>
+          <p>Type: <span>${type }</span></p>
+          <p>ATK: <span class="atk">${atk || "N/A"}</span></p>
+          <p>DEF: <span class="def">${def || "N/A"}</span></p>
+          <p>LVL: <span>${level || "N/A"}</span></p>
+          <p>Race: <span>${race}</span></p>
+          <p>Attribute: <span>${attribute || "N/A"}</span></p>
           <p>DESC: <span>${desc}</span></p>
         </aside>
       </figure>

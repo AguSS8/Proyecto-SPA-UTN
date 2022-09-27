@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: rgba(0, 0, 0, 0.882);
+}
+
 #header{
 
   padding: 0.5rem;
@@ -21,6 +25,7 @@
 }
 
 .search-form>i {
+  color: #9999FF;
   cursor: pointer;
   font-size: 2em;
   padding: 5px;
@@ -76,11 +81,14 @@ input:focus{
   }
 }
 
-#main{
-  padding: 1.5em;
+#main{  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: auto;
+  padding: 1.5em;
+
+  width: 80%;
 }
 
 figure>a>img {
@@ -94,6 +102,43 @@ figure>a>img:hover {
 
 .card-container {
   display: flex;
-    flex-wrap: wrap;
-    width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.card-container img{
+  width: 35%;
+}
+
+.card-container aside {
+  width: 60%;
+}
+
+.card-info p {
+  color: #eee;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+form{
+  margin-top: 2em;
+}
+
+form > div > label {
+  color: #eee;
+  display: block;
+  margin-bottom: .6em;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 2em;
+}
+
+#registro, #loguearse{
+  color: #eee;
+  background-color: #9999FF;
+  display: block;
+  margin: auto;
 }

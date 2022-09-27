@@ -1,7 +1,6 @@
 import { Header } from "./components/Header.js";
 import { Main } from "./components/Main.js";
 import { Spinner } from "./components/Spinner.js";
-
 import { Index } from "./routes/index.routes.js";
 
 const d = document;

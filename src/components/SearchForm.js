@@ -1,10 +1,13 @@
+import { Input } from "./Input.js";
+
 export function SearchForm () {
  const $searchForm = document.createElement("form");
- const $input = document.createElement("input");
+ const $input = Input({
+  name:"search",
+  type:"search",
+  placeholder:"Buscar Carta"
+ })
  $searchForm.classList.add("search-form");
- $input.name = "search";
- $input.type = "search";
- $input.placeholder = "Buscar Carta";
  $searchForm.appendChild($input);
  const $btnSearch = document.createElement("i");
  $btnSearch.classList.add("ri-search-line");

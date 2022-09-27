@@ -4,6 +4,7 @@ export async function dataHandler({url, cb}) {
     .then(data => {
       cb(data);
       document.querySelector(".spinner").style.display = "none"
+      
     })
     .catch(err => {
       console.log(err);

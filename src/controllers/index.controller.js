@@ -13,7 +13,6 @@ function cardDetail({data}) {
   let $main = document.getElementById("main");
   $main.innerHTML = "";
   let card = data;
-  console.log(card)
   $main.innerHTML = CardInfo(card);
 }
 
