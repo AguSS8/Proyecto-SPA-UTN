@@ -8,7 +8,7 @@ export async function Index() {
   let { hash } = location;
   console.log(location);
   if (!hash || hash === '#/') {
-    await+ dataHandler({
+    await dataHandler({
       url: urlApi.url,
       cb: indexController.index
     });
@@ -22,7 +22,6 @@ export async function Index() {
     document.querySelector(".spinner").style.display = "none";
   }
 
-  
   else {
     await dataHandler({
       url: urlApi.byName+hash.slice(2),
