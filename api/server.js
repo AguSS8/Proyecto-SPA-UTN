@@ -1,7 +1,5 @@
 const express = require ('express');
 const router = require('./routes/router');
-
-const connection = require('./database/db')
 const cors = require('cors');
 
 
@@ -19,5 +17,3 @@ app.use('/', router);
 app.listen(app.get('port'), ()=>{
   console.log('Server on port ' + app.get('port'));
 })
-
-connection
