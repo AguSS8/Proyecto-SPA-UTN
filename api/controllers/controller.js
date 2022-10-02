@@ -4,6 +4,7 @@ const bcryptjs = require('bcryptjs');
 
 const register = async (req, res) =>{
   try {
+    console.log("llega aca");
     const {name, mail, pass} = req.body;
     let passHash = await bcryptjs.hash(pass, 8);
     conexion.query('INSERT INTO usuarios SET ?', {name:name, mail: mail, pass:passHash}, (error, results)=>{

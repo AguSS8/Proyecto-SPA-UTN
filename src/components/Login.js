@@ -1,6 +1,6 @@
 export function LoginForm() {
   return `
-  <form id="loginForm">
+  <form id="loginForm" >
    <div class="form-group">
      <label for="nombre">Mail</label>
      <input type="text" class="form-control" id="mail" name="mail">

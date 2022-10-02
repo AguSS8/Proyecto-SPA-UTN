@@ -1,6 +1,6 @@
 export function RegisterForm() {
   return `
-  <form id="registerForm">
+  <form id="registerForm" method="http://localhost:3000/register">
    <div class="form-group">
      <label for="nombre">Nombre</label>
      <input type="text" class="form-control" id="nombre" name="nombre">
