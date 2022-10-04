@@ -14,7 +14,7 @@ export const register = (e)=>{
     });
 }
 
-export const login = e => {
+export  const login = e => {
   e.preventDefault();
   let mail = document.getElementById("mail").value;
   let pass = document.getElementById("pass").value;
@@ -25,5 +25,9 @@ export const login = e => {
         "Content-type": "application/json"
       },
       body: JSON.stringify(datos)
-    });
+    })
+      .then(res => res.json())
+      .then(data => console.log(data))
+    
+      
 }

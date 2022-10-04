@@ -16,6 +16,11 @@ function cardDetail({data}) {
   $main.innerHTML = CardInfo(card);
 }
 
+function loggedPage ({name, mail}){
+  let $main = document.getElementById("main");
+  $main.innerHTML = "";
+}
+
 export default{
   index,
   cardDetail
