@@ -5,7 +5,7 @@ import { Index } from "./routes/index.routes.js";
 
 const d = document;
 
-export function App(params) {
+export function App(params) {  
   d.getElementById("root").innerHTML = null;
   d.getElementById("root").appendChild(Header());
   d.getElementById("root").appendChild(Main());

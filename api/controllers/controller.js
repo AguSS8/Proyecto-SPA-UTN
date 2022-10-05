@@ -25,14 +25,13 @@ const login = async (req, res) => {
       const token = jwt.sign({ id: id }, process.env.JWT_SECRETO, {
         expiresIn: process.env.JWT_TIEMPO_EXPIRA
       })
+      const name = results[0].name
       
       console.log("TOKEN: " + token + " para el USUARIO : " + results[0].name)
 
-      const cookiesOptions = {
-        expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000),
-        httpOnly: true
-      }
-      res.json({token, cookiesOptions});
+      res.json({token, name})
+      
+      //la manera que con este response se configuren cookies del otro lado
     }
   })
 }

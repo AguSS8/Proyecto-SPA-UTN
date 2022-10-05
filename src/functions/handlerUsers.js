@@ -27,7 +27,7 @@ export  const login = e => {
       body: JSON.stringify(datos)
     })
       .then(res => res.json())
-      .then(data => console.log(data))
-    
-      
+      .then(data => {
+        localStorage.setItem('isLoged', JSON.stringify(data))
+      })
 }

@@ -11,6 +11,9 @@ export function SearchForm () {
  $searchForm.appendChild($input);
  const $btnSearch = document.createElement("i");
  $btnSearch.classList.add("ri-search-line");
+ $btnSearch.addEventListener("click", e => {
+   if (localStorage.getItem('isLoged')) $searchForm.submit();
+ })
  $searchForm.appendChild($btnSearch);
  return $searchForm;
 }
