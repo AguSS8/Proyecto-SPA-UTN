@@ -7,8 +7,6 @@ import urlApi from "../functions/urlApi.js";
 
 export async function Index() {
   let { hash } = location;
-  console.log(location);
-
 
   if (!hash || hash === '#/') {
     await dataHandler({
@@ -33,5 +31,5 @@ export async function Index() {
       cb: indexController.cardDetail
     })
   }
-  
+
 };
